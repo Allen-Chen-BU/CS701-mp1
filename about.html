@@ -2,70 +2,96 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> About | Resume</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <style>
+            img {
+                float: left;
+                margin-right: 5%;
+                margin-bottom: 3%;
+                width:30%;
+                height:30%;
+            }
+
+            @media screen and (max-width: 750px){
+                img {
+                    display: block;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    width: 50%;
+                }
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>HungHsu(Allen) Chen's Resume</h1>
             <p>A website version of Resume</p>
         </header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./edu.html">Education</a></li>
-                <li><a href="./exp.html">Experience</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./skill.html">Skills</a></li>
-            </ul>
-        </nav>
-        <main>
-            <img src="./assets/headshot.jpg" alt="pictureOfHungHsu" style="width:30%; height:30%;">
-            <hr/>
-            <p>
-                Hi! I am HungHsu Chen, and I also go by Allen. 
-                I am passionate about coding, bouldering, 
-                and gaming (on both board games and video games!). 
-                I am a student at Boston University and am working on my 
-                Master of Science in Computer Science. I am aiming to become 
-                a software developer.
-            </p>
-            <p>
-                I had my undergrad at the University of California, Davis. 
-                My majors were Statistics and Japanese. 
-                I became interested in the Japanese language and culture after 
-                I went to Japan to study abroad, and Statistics was a 
-                "major for getting a job." After I graduated, I looked for a 
-                job in data science but didn't go well. Nevertheless, 
-                with the SQL and Python that I self-learned while looking for a job, 
-                I was able to get an offer from a consultant company, 
-                and finally connect to a contract position at Microsoft, 
-                where I learned about cloud computing and experienced working as 
-                a software engineer.
-            </p>
-            <p>
-                After I went back to Taiwan, I was able to get a position at Willingbikes 
-                as a Management Information System Engineer. 
-                This job gave me a lot of experience in software development. 
-                As my responsibility, I not only needed to fix technical issues 
-                but also to develop the application used within the company. 
-                The application we developed was based on an ERP system. 
-                As the system was purchased years ago, our goal was to develop 
-                new functions to meet the needs of different departments. 
-                The application was developed by PHP with Laravel framework, 
-                and the server was hosted on a VM in our private network. 
-                In this position, I was able to learn how to build a web application with MVC, 
-                and this experience evoked my interest in software development.
-            </p>
-            <p>
-                With a strong interest in software development, 
-                I applied to the MSCS at Boston University. 
-                Here, I have studied programming with Java, styles of coding, 
-                algorithms, operating systems, software design patterns, etc. 
-                Now, my goal is to get a position as a software developer which 
-                can let me apply what I learned and let me write code that I love.
-            </p>
-        </main>
+        <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./edu.html">Education</a></li>
+                    <li><a href="./exp.html">Experience</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./skill.html">Skills</a></li>
+                </ul>
+            </nav>
+            <main>
+                <p>
+                    <img src="./assets/headshot.jpg" alt="pictureOfHungHsu">
+                    Hi! I am HungHsu Chen, and I also go by Allen. 
+                    I am passionate about coding, bouldering, 
+                    and gaming (on both board games and video games!). 
+                    I am a student at Boston University and am working on my 
+                    Master of Science in Computer Science. I am aiming to become 
+                    a software developer.
+                <br>
+                <br>
+                    I had my undergrad at the University of California, Davis. 
+                    My majors were Statistics and Japanese. 
+                    I became interested in the Japanese language and culture after 
+                    I went to Japan to study abroad, and Statistics was a 
+                    "major for getting a job." After I graduated, I looked for a 
+                    job in data science but didn't go well. Nevertheless, 
+                    with the SQL and Python that I self-learned while looking for a job, 
+                    I was able to get an offer from a consultant company, 
+                    and finally connect to a contract position at Microsoft, 
+                    where I learned about cloud computing and experienced working as 
+                    a software engineer.
+                <br>
+                <br>
+                    After I went back to Taiwan, I was able to get a position at Willingbikes 
+                    as a Management Information System Engineer. 
+                    This job gave me a lot of experience in software development. 
+                    As my responsibility, I not only needed to fix technical issues 
+                    but also to develop the application used within the company. 
+                    The application we developed was based on an ERP system. 
+                    As the system was purchased years ago, our goal was to develop 
+                    new functions to meet the needs of different departments. 
+                    The application was developed by PHP with Laravel framework, 
+                    and the server was hosted on a VM in our private network. 
+                    In this position, I was able to learn how to build a web application with MVC, 
+                    and this experience evoked my interest in software development.
+                <br>
+                <br>
+                    With a strong interest in software development, 
+                    I applied to the MSCS at Boston University. 
+                    Here, I have studied programming with Java, styles of coding, 
+                    algorithms, operating systems, software design patterns, etc. 
+                    Now, my goal is to get a position as a software developer which 
+                    can let me apply what I learned and let me write code that I love.
+                </p>
+            </main>
+        </div>
         <footer>
             <p>All Rights Reserved by HungHsu(Allen) Chen <a href="./index.html">Credits</a> &copy;</p>
         </footer>

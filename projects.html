@@ -2,99 +2,118 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Projects | Resume</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <style>
+            main>ol{
+                padding: 0;
+                list-style: upper-roman;
+            }
+
+            main>ol>li {
+                margin-bottom: 5vh;
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>HungHsu(Allen) Chen's Resume</h1>
             <p>A website version of Resume</p>
         </header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./edu.html">Education</a></li>
-                <li><a href="./exp.html">Experience</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./skill.html">Skills</a></li>
-            </ul>
-        </nav>
-        <main>
-            <ul>
-                <li>
-                    <strong>Campus Exchange</strong>
-                    <br>
-                    09/2024 - 12/2024
-                    <ul>
-                        <li>
-                            Implemented a second-hand trading web app with Java Spring Boot,
-                             MySQL, and Vue.js in a team of 6
-                        </li>
-                        <li>
-                            Designed the system architecture based on the MVC design pattern to 
-                            increase development speed and code reusability.
-                        </li>
-                        <li>
-                            Built a GitHub workflow to automatically test, build, and 
-                            deploy project to Docker Hub for CI.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <strong><a href="allenlqve.github.io/YouTube_Randomizer/" target="_blank">YouTube Randomizer</a></strong>
-                    <br>
-                    09/2024 - 12/2024
-                    <ul>
-                        <li>
-                            Created a YouTube playlist randomizer that allows user to shuffle,
-                             merge, and play YouTube playlists using JavaScript, HTML, and CSS.
-                        </li>
-                        <li>
-                            Integrated with Google OAuth 2.0, Google YouTube API, and 
-                            IFrame to allow user to fetch and play playlists in a Google account.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Receipt Recorder</strong>
-                    <br>
-                    07/2024 - 09/2024
-                    <ul>
-                        <li>
-                            Designed a web application for user to compare the prices of 
-                            merchandise in different grocery stores.
-                        </li>
-                        <li>
-                            Developed a RESTful API using Python with Django 
-                            and stored data in a SQLite3 database. 
-                        </li>
-                        <li>
-                            Built frontend as a single-page application with React for 
-                            user to view and manipulate data.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>3D Maze</strong>
-                    <br>
-                    05/2024 - 06/2024
-                    <ul>
-                        <li>
-                            Built up a 3D Maze by implementing ray casting algorithm with
-                             Java to show 3D graphics using 2D raysand displayed 
-                             using Java Swing JFrame.
-                        </li>
-                        <li>
-                            Constructed event listeners in Java using Java AWT to 
-                            allow user to move and rotate in the maze.
-                        </li>
-                        <li>
-                            Generated randomized mazes by applying Eller's Algorithm.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </main>
+        <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./edu.html">Education</a></li>
+                    <li><a href="./exp.html">Experience</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./skill.html">Skills</a></li>
+                </ul>
+            </nav>
+            <main>
+                <ol>
+                    <li>
+                        <strong>Campus Exchange</strong>
+                        <br>
+                        09/2024 - 12/2024
+                        <ul>
+                            <li>
+                                Implemented a second-hand trading web app with Java Spring Boot,
+                                 MySQL, and Vue.js in a team of 6
+                            </li>
+                            <li>
+                                Designed the system architecture based on the MVC design pattern to 
+                                increase development speed and code reusability.
+                            </li>
+                            <li>
+                                Built a GitHub workflow to automatically test, build, and 
+                                deploy project to Docker Hub for CI.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong><a href="https://allenlqve.github.io/YouTube_Randomizer/" target="_blank">YouTube Randomizer</a></strong>
+                        <br>
+                        09/2024 - 12/2024
+                        <ul>
+                            <li>
+                                Created a YouTube playlist randomizer that allows user to shuffle,
+                                 merge, and play YouTube playlists using JavaScript, HTML, and CSS.
+                            </li>
+                            <li>
+                                Integrated with Google OAuth 2.0, Google YouTube API, and 
+                                IFrame to allow user to fetch and play playlists in a Google account.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Receipt Recorder</strong>
+                        <br>
+                        07/2024 - 09/2024
+                        <ul>
+                            <li>
+                                Designed a web application for user to compare the prices of 
+                                merchandise in different grocery stores.
+                            </li>
+                            <li>
+                                Developed a RESTful API using Python with Django 
+                                and stored data in a SQLite3 database. 
+                            </li>
+                            <li>
+                                Built frontend as a single-page application with React for 
+                                user to view and manipulate data.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>3D Maze</strong>
+                        <br>
+                        05/2024 - 06/2024
+                        <ul>
+                            <li>
+                                Built up a 3D Maze by implementing ray casting algorithm with
+                                 Java to show 3D graphics using 2D raysand displayed 
+                                 using Java Swing JFrame.
+                            </li>
+                            <li>
+                                Constructed event listeners in Java using Java AWT to 
+                                allow user to move and rotate in the maze.
+                            </li>
+                            <li>
+                                Generated randomized mazes by applying Eller's Algorithm.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </main>
+        </div>
         <footer>
             <p>All Rights Reserved by HungHsu(Allen) Chen <a href="./index.html">Credits</a> &copy;</p>
         </footer>

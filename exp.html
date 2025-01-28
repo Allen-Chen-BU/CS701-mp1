@@ -2,85 +2,104 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Experience | Resume</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <style>
+            main>ul{
+                list-style-type: none;
+                padding: 0;
+            }
+
+            main>ul>li {
+                margin-bottom: 5vh;
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>HungHsu(Allen) Chen's Resume</h1>
             <p>A website version of Resume</p>
         </header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./edu.html">Education</a></li>
-                <li><a href="./exp.html">Experience</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./skill.html">Skills</a></li>
-            </ul>
-        </nav>
-        <main>
-            <ul>
-                <li>
-                    <strong>Software Engineer</strong>, 
-                    contracted with Microsoft through Antra, WA 
-                    <br>
-                    02/2022 - 06/2022
-                    <ul>
-                        <li>
-                            Responded to manage Cloud Resources and VMs on Azure 
-                            by operating Azure portal, Azure CLI, and Azure PowerShell 
-                            to maintain service for Dynamics 365 Fraud Protection.
-                        </li>
-                        <li>
-                            Resolved 3+ incidents per day by communicating with teams 
-                            to avoid issues like usage of expired keys.
-                        </li>
-                        <li>
-                            Wrote automated scripts to scan VMs to ensure VMs are up 
-                            and secrets are updated.
-                        </li>
-                        <li>
-                            Deployed an Azure Service Fabric cluster to replace old cluster 
-                            for vertical upgrade.
-                        </li>
-                        <li>
-                            Studied Docker containers and pods on Azure Kubernetes for transformation
-                             and further scalability.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Management Information System Engineer</strong>, 
-                    Willingbikes, Taiwan
-                    <br>
-                    02/2023 - 07/2023
-                    <ul>
-                        <li>
-                            Developed a file-searching application with PHP Laravel 
-                            to improve workflow in production line by 5%. 
-                        </li>
-                        <li>
-                            Generated monthly and weekly reports automatically with SQL 
-                            and Laravel Mail based on an ERP system's database 
-                            for different departments.
-                        </li>
-                        <li>
-                            Recovered files, rebuilt servers, and determined source of attack 
-                            after damaged from ransomware.
-                        </li>
-                        <li>
-                            Managed Active Directory for employees to authorize files and 
-                            applications by utilizing group policies.
-                        </li>
-                        <li>
-                            Provided IT support on hardware and software issues 
-                            for equipment such as computers and tablets.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </main>
+        <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./edu.html">Education</a></li>
+                    <li><a href="./exp.html">Experience</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./skill.html">Skills</a></li>
+                </ul>
+            </nav>
+            <main>
+                <ul>
+                    <li>
+                        <strong>Software Engineer</strong>, 
+                        contracted with Microsoft through Antra, WA 
+                        <br>
+                        02/2022 - 06/2022
+                        <ul>
+                            <li>
+                                Responded to manage Cloud Resources and VMs on Azure 
+                                by operating Azure portal, Azure CLI, and Azure PowerShell 
+                                to maintain service for Dynamics 365 Fraud Protection.
+                            </li>
+                            <li>
+                                Resolved 3+ incidents per day by communicating with teams 
+                                to avoid issues like usage of expired keys.
+                            </li>
+                            <li>
+                                Wrote automated scripts to scan VMs to ensure VMs are up 
+                                and secrets are updated.
+                            </li>
+                            <li>
+                                Deployed an Azure Service Fabric cluster to replace old cluster 
+                                for vertical upgrade.
+                            </li>
+                            <li>
+                                Studied Docker containers and pods on Azure Kubernetes for transformation
+                                 and further scalability.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Management Information System Engineer</strong>, 
+                        Willingbikes, Taiwan
+                        <br>
+                        02/2023 - 07/2023
+                        <ul>
+                            <li>
+                                Developed a file-searching application with PHP Laravel 
+                                to improve workflow in production line by 5%. 
+                            </li>
+                            <li>
+                                Generated monthly and weekly reports automatically with SQL 
+                                and Laravel Mail based on an ERP system's database 
+                                for different departments.
+                            </li>
+                            <li>
+                                Recovered files, rebuilt servers, and determined source of attack 
+                                after damaged from ransomware.
+                            </li>
+                            <li>
+                                Managed Active Directory for employees to authorize files and 
+                                applications by utilizing group policies.
+                            </li>
+                            <li>
+                                Provided IT support on hardware and software issues 
+                                for equipment such as computers and tablets.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </main>
+        </div>
         <footer>
             <p>All Rights Reserved by HungHsu(Allen) Chen <a href="./index.html">Credits</a> &copy;</p>
         </footer>
