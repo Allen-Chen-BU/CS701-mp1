@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/main.css">
 
         <style>
             main>ol{
@@ -23,200 +23,127 @@
             button, input {
                 font-family: inherit;
             }
+
+            @media screen and (max-width: 750px) {
+                main>ol>li {
+                margin-left: 3vw;
+                margin-right: 3vw;
+            }
+            }
         </style>
     </head>
     <body>
-        <header>
-            <h1>HungHsu(Allen) Chen's Resume</h1>
-            <p>A website version of Resume</p>
-        </header>
-        <div id="main">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Me</a></li>
-                    <li><a href="./edu.html">Education</a></li>
-                    <li><a href="./exp.html">Experience</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./skill.html">Skills</a></li>
-                </ul>
-            </nav>
-            <main>
-                <ol>
-                    <li>
-                        <strong>Campus Exchange</strong>
-                        <br>
-                        09/2024 - 12/2024
-                        <ul>
-                            <li>
-                                Implemented a second-hand trading web app with Java Spring Boot,
-                                 MySQL, and Vue.js in a team of 6
-                            </li>
-                            <li>
-                                Designed the system architecture based on the MVC design pattern to 
-                                increase development speed and code reusability.
-                            </li>
-                            <li>
-                                Built a GitHub workflow to automatically test, build, and 
-                                deploy project to Docker Hub for CI.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong><a href="https://allenlqve.github.io/YouTube_Randomizer/" target="_blank">YouTube Randomizer</a></strong>
-                        <br>
-                        09/2024 - 12/2024
-                        <ul>
-                            <li>
-                                Created a YouTube playlist randomizer that allows user to shuffle,
-                                 merge, and play YouTube playlists using JavaScript, HTML, and CSS.
-                            </li>
-                            <li>
-                                Integrated with Google OAuth 2.0, Google YouTube API, and 
-                                IFrame to allow user to fetch and play playlists in a Google account.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong><a href="https://github.com/allenLQVE/ReceiptRecorder" target="_blank">Receipt Recorder</a></strong>
-                        <br>
-                        07/2024 - 09/2024
-                        <ul>
-                            <li>
-                                Designed a web application for user to compare the prices of 
-                                merchandise in different grocery stores.
-                            </li>
-                            <li>
-                                Developed a RESTful API using Python with Django 
-                                and stored data in a SQLite3 database. 
-                            </li>
-                            <li>
-                                Built frontend as a single-page application with React for 
-                                user to view and manipulate data.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong><a href="https://github.com/allenLQVE/3DMaze" target="_blank">3D Maze</a></strong>
-                        <br>
-                        05/2024 - 06/2024
-                        <ul>
-                            <li>
-                                Built up a 3D Maze by implementing ray casting algorithm with
-                                 Java to show 3D graphics using 2D raysand displayed 
-                                 using Java Swing JFrame.
-                            </li>
-                            <li>
-                                Constructed event listeners in Java using Java AWT to 
-                                allow user to move and rotate in the maze.
-                            </li>
-                            <li>
-                                Generated randomized mazes by applying Eller's Algorithm.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>JavaScript Calculator</strong>
-                        <br>
-                        <span>a: </span><input type="number" id="numA">
-                        <span>b: </span><input type="number" id="numB">
-                        <button id="addBtn">a + b</button>
-                        <button id="minusBtn">a - b</button>
-                        <button id="mutiplyBtn">a * b</button>
-                        <button id="divisionBtn">a / b</button>
-                        <button id="powerBtn">a<sup>b</sup></button>
-                        <button id="clearBtn">Clear</button>
-                        <span> = </span>
-                        <span id="resultSpan"></span>
-                    </li>
-                </ul>
-            </main>
+        <div id="body">
+            <header>
+                <h1>HungHsu(Allen) Chen's Resume</h1>
+                <p>A website version of Resume</p>
+            </header>
+            <div id="main">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Me</a></li>
+                        <li><a href="./edu.html">Education</a></li>
+                        <li><a href="./exp.html">Experience</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./skill.html">Skills</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    <ol>
+                        <li>
+                            <strong>Campus Exchange</strong>
+                            <br>
+                            09/2024 - 12/2024
+                            <ul>
+                                <li>
+                                    Implemented a second-hand trading web app with Java Spring Boot,
+                                     MySQL, and Vue.js in a team of 6
+                                </li>
+                                <li>
+                                    Designed the system architecture based on the MVC design pattern to 
+                                    increase development speed and code reusability.
+                                </li>
+                                <li>
+                                    Built a GitHub workflow to automatically test, build, and 
+                                    deploy project to Docker Hub for CI.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong><a href="https://allenlqve.github.io/YouTube_Randomizer/" target="_blank">YouTube Randomizer</a></strong>
+                            <br>
+                            09/2024 - 12/2024
+                            <ul>
+                                <li>
+                                    Created a YouTube playlist randomizer that allows user to shuffle,
+                                     merge, and play YouTube playlists using JavaScript, HTML, and CSS.
+                                </li>
+                                <li>
+                                    Integrated with Google OAuth 2.0, Google YouTube API, and 
+                                    IFrame to allow user to fetch and play playlists in a Google account.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/allenLQVE/ReceiptRecorder" target="_blank">Receipt Recorder</a></strong>
+                            <br>
+                            07/2024 - 09/2024
+                            <ul>
+                                <li>
+                                    Designed a web application for user to compare the prices of 
+                                    merchandise in different grocery stores.
+                                </li>
+                                <li>
+                                    Developed a RESTful API using Python with Django 
+                                    and stored data in a SQLite3 database. 
+                                </li>
+                                <li>
+                                    Built frontend as a single-page application with React for 
+                                    user to view and manipulate data.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/allenLQVE/3DMaze" target="_blank">3D Maze</a></strong>
+                            <br>
+                            05/2024 - 06/2024
+                            <ul>
+                                <li>
+                                    Built up a 3D Maze by implementing ray casting algorithm with
+                                     Java to show 3D graphics using 2D raysand displayed 
+                                     using Java Swing JFrame.
+                                </li>
+                                <li>
+                                    Constructed event listeners in Java using Java AWT to 
+                                    allow user to move and rotate in the maze.
+                                </li>
+                                <li>
+                                    Generated randomized mazes by applying Eller's Algorithm.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>JavaScript Calculator</strong>
+                            <br>
+                            <label for="numA">a: </label><input type="number" id="numA">
+                            <label for="numA">b: </label><input type="number" id="numB">
+                            <button id="addBtn">a + b</button>
+                            <button id="minusBtn">a - b</button>
+                            <button id="mutiplyBtn">a * b</button>
+                            <button id="divisionBtn">a / b</button>
+                            <button id="powerBtn">a<sup>b</sup></button>
+                            <button id="clearBtn">Clear</button>
+                            <span> = </span>
+                            <span id="resultSpan"></span>
+                        </li>
+                    </ul>
+                </main>
+            </div>
+            <footer>
+                <p>All Rights Reserved by HungHsu(Allen) Chen <a href="./index.html">Credits</a> &copy;</p>
+            </footer>
         </div>
-        <footer>
-            <p>All Rights Reserved by HungHsu(Allen) Chen <a href="./index.html">Credits</a> &copy;</p>
-        </footer>
+        <script src="./modules/projects.js"></script>
     </body>
-    <script>
-        const numA = document.querySelector("#numA");
-        const numB = document.querySelector("#numB");
-        const resultSpan = document.querySelector("#resultSpan");
-        function hasInput() {
-            return numA.value && numB.value;
-        }
-
-        function setColor(result) {
-            if (result < 0) {
-                resultSpan.style.color = 'red';
-            } else {
-                resultSpan.style.color = 'black';
-            }
-        }
-
-        function setResult(result) {
-            resultSpan.innerHTML = result.toFixed(4);
-        }
-        
-        window.addEventListener("DOMContentLoaded", () => {
-            document.querySelector("#addBtn").addEventListener("click", () => {
-                if(!hasInput()) {
-                    return;
-                }
-                const result = Number(numA.value) + Number(numB.value);
-                setResult(result);
-                setColor(result);
-            });
-
-            document.querySelector("#minusBtn").addEventListener("click", () => {
-                if(!hasInput()) {
-                    return;
-                }
-                const result = Number(numA.value) - Number(numB.value);
-                setResult(result);
-                setColor(result);
-            });
-
-            document.querySelector("#mutiplyBtn").addEventListener("click", () => {
-                if(!hasInput()) {
-                    return;
-                }
-                const result = Number(numA.value) * Number(numB.value);
-                setResult(result);
-                setColor(result);
-            });
-
-            document.querySelector("#divisionBtn").addEventListener("click", () => {
-                if(!hasInput()) {
-                    return;
-                }
-                const result = Number(numA.value) / Number(numB.value);
-                setResult(result);
-                setColor(result);
-            });
-
-            document.querySelector("#powerBtn").addEventListener("click", () => {
-                if(!hasInput()) {
-                    return;
-                }
-                const a = Number(numA.value);
-                const b = Number(numB.value);
-                let result = 1;
-                for (let _ = 0; _ < Math.abs(b); _++) {
-                    result *= a;
-                }
-
-                if (b < 0) {
-                    result = 1 / result;
-                }
-                
-                setResult(result);
-                setColor(result);
-            });
-
-            document.querySelector("#clearBtn").addEventListener("click", () => {
-                numA.value = null;
-                numB.value = null;
-                resultSpan.innerHTML = "";
-            });
-        })
-    </script>
 </html>

@@ -1,7 +1,13 @@
 body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Oxanium", serif;
+    font-size: calc(2px + 1vw);
+}
+
+#body {
     margin-left: 10%;
     margin-right: 10%;
-    font-family: "Oxanium", serif;
 }
 
 main {
@@ -10,7 +16,7 @@ main {
     padding: 5%;
 }
 
-main a, main u {
+main a, main u{
     color:rgb(65, 127, 147);
 }
 
@@ -24,6 +30,10 @@ footer {
     padding: 1%;
     background-color: rgb(62, 127, 147);
     color: white;
+}
+
+footer a {
+    color: rgb(253, 242, 210);
 }
 
 nav {
@@ -48,6 +58,10 @@ nav ul li a {
 }
 
 @media screen and (max-width: 750px) {
+    body {
+        font-size: calc(2px + 3vw);
+    }
+
     header {
         text-align: center;
     }
