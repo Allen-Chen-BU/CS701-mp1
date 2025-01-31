@@ -41,18 +41,26 @@ nav {
     background-color:rgb(67, 64, 62);
 }
 
-nav li {
-    border-bottom: rgb(125, 121, 121) solid;
-}
-
 nav ul {
     list-style: none;
-    padding-left: 0;
     margin: 0;
+    padding-left: 0;
+}
+
+nav li {
+    border-bottom: white solid;
+}
+
+nav li:hover{
+    border-bottom: rgb(253, 242, 210) solid;
+
+    a {
+        color: rgb(253, 242, 210);
+    }
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: bolder;
     text-decoration: none;
 }
