@@ -52,10 +52,10 @@ nav li {
 }
 
 nav li:hover{
-    border-bottom: rgb(253, 242, 210) solid;
+    border-bottom: rgb(117, 196, 220) solid;
 
     a {
-        color: rgb(253, 242, 210);
+        color: rgb(117, 196, 220);
     }
 }
 
