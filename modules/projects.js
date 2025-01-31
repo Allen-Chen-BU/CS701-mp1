@@ -15,7 +15,7 @@ function setColor(result) {
 }
 
 function setResult(result) {
-    resultSpan.innerHTML = result.toFixed(4);
+    resultSpan.innerHTML = parseFloat(result.toFixed(4));
 }
 
 window.addEventListener("DOMContentLoaded", () => {

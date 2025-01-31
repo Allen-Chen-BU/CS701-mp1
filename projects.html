@@ -22,6 +22,12 @@
 
             button, input {
                 font-family: inherit;
+                margin-top: 1vh;
+            }
+
+            input {
+                width: 20%;
+                margin-right: 1vw;
             }
 
             @media screen and (max-width: 750px) {
@@ -128,14 +134,35 @@
                             <br>
                             <label for="numA">a: </label><input type="number" id="numA">
                             <label for="numB">b: </label><input type="number" id="numB">
-                            <button id="addBtn">a + b</button>
-                            <button id="minusBtn">a - b</button>
-                            <button id="mutiplyBtn">a * b</button>
-                            <button id="divisionBtn">a / b</button>
-                            <button id="powerBtn">a<sup>b</sup></button>
-                            <button id="clearBtn">Clear</button>
-                            <span> = </span>
-                            <span id="resultSpan"></span>
+                            <br>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <button id="addBtn">a + b</button>
+                                    </td>
+                                    <td>
+                                        <button id="minusBtn">a - b</button>
+                                    </td>
+                                    <td rowspan="2">
+                                        <button id="powerBtn">a<sup>b</sup></button>
+                                    </td>
+                                    <td>
+                                        <button id="clearBtn">Clear</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="mutiplyBtn">a * b</button>
+                                    </td>
+                                    <td>
+                                        <button id="divisionBtn">a / b</button>
+                                    </td>
+                                    <td>
+                                        <span> = </span>
+                                        <span id="resultSpan"></span>
+                                    </td>
+                                </tr>
+                            </table>
                         </li>
                     </ol>
                 </main>
