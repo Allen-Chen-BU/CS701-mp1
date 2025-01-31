@@ -1,4 +1,4 @@
-body {
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: "Oxanium", serif;
@@ -12,6 +12,7 @@ body {
 
 main {
     height: fit-content;
+    min-height: 90vh;
     background-color: rgb(253, 242, 210);
     padding: 5%;
 }
@@ -66,7 +67,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 750px) {
-    body {
+    * {
         font-size: calc(2px + 3vw);
     }
 
